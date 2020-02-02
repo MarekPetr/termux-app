@@ -5,7 +5,7 @@
     android:sharedUserId="com.termux"
     android:sharedUserLabel="@string/shared_user_label" >
     
-    <permission android:name="com.termux.permission.TERMUX_SERVICE"
+    <permission android:name="com.termux.permission.TERMUX_SERVICE_EXE"
         android:label="@string/termux_permission_label"
         android:description="@string/termux_permission_description"
         android:icon="@drawable/ic_launcher"
@@ -118,7 +118,7 @@
         <service
             android:name="com.termux.app.TermuxService"
             android:exported="true"
-            android:permission="com.termux.permission.TERMUX_SERVICE">
+            android:permission="com.termux.permission.TERMUX_SERVICE_EXE">
             <intent-filter>
                 <action android:name="com.termux.service_execute" />
             </intent-filter>
